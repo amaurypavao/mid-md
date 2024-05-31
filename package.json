@@ -1,12 +1,13 @@
 {
   "scripts": {
-    "start": "",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon index.js"
   },
   "dependencies": {
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pm2": "^5.4.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.2"

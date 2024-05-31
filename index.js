@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = 3000;
+//const port = 3000;
 
 app.use(express.json());
 
@@ -36,6 +36,6 @@ app.post('/api/vtex-master-data', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`VTEX middleware listening at http://localhost:${port}`);
-});
+//app.listen(port, () => {
+//  console.log(`VTEX middleware listening at http://localhost:${port}`);
+//});
